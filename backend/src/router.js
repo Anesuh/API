@@ -15,5 +15,5 @@ router.post("/plans", cnvController.createPlan);
 router.post("/plansup", cnvController.updatePlan);
 
 //DELETE
-router.post("/plansdel", cnvController.deltePlan);
+router.delete("/plans/:id", cnvController.deletePlan);
 module.exports = router;

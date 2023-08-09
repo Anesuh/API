@@ -16,14 +16,14 @@ const updatePlan = async (req, res) => {
     return res.status(201).json(changePlan);
 };
 
-const deltePlan = async (req, res) => {
-    const delPlan = await cnvModel.deletePlan(req.body);
-    return res.status(201).json(delPlan);
+const deletePlan = async (req, res) => {
+    const delPlan = await cnvModel.deletePlan(req.params.id);
+    return res.status(201).send("Plan deleted successfully");
 };
 
 module.exports = {
     getAll,
     createPlan,
     updatePlan,
-    deltePlan,
+    deletePlan,
 };

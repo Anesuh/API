@@ -30,8 +30,7 @@ const updatePlan = async (plano) => {
     return changePlan;
 };
 
-const deletePlan = async (plano) => {
-    const { id } = plano
+const deletePlan = async (id) => {
     const delPlan = await connection.execute(
         "DELETE FROM planos WHERE id = ?",
         [id]
