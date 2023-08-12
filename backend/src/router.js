@@ -12,7 +12,7 @@ router.get("/plans", cnvController.getAll);
 router.post("/plans", cnvController.createPlan);
 
 //UPDATE
-router.post("/plansup", cnvController.updatePlan);
+router.put("/plans/:id", cnvController.updatePlan);
 
 //DELETE
 router.delete("/plans/:id", cnvController.deletePlan);

@@ -1,6 +1,9 @@
 const mysql = require("mysql2/promise");
 const dotenv = require("dotenv").config();
 
+
+console.log(process.env.MYSQL_DATABASE)
+
 //Cria uma conexão com o banco de dados, pegando informações do dotenv
 const connection = mysql.createPool({
   host: process.env.MYSQL_HOST,
