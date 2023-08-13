@@ -8,7 +8,7 @@ const getAll = async () => {
 };
 
 const createPlan = async (plano) => {
-  const data = new Date(Date.now()).toLocaleString();
+  const data = new Date(Date.now())
   const { nome } = plano;
   const { valor } = plano;
   console.log(valor);
