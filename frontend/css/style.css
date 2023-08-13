@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     font-family: 'Urbanist', sans-serif;
+}
+
+body{
+     background-color: #009fe3;
+}
+
+main{
+     background-color: #FFFF;
+     border-radius: 8px;
+     padding: 20px;
+     width: 80%;
+     margin:40px auto ;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+.addform{
+     display: flex;
+     margin-bottom: 50px;
+     gap: 50px;
+}
+
+input{
+     width: 100%;
+     flex: 1;
+     padding: 15px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     outline: none;
+     font: 1rem;
+     font-weight: 600;
+
+}
+
+button[type="submit"]{
+     background-color: #009fe3 ;
+     width: 50px;
+     height: 50px;
+     border: none;
+     border-radius: 5px;
+     color: #fff;
+     font-size: 1.6rem;
+     font-weight: 500;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+
+table{
+     border-collapse: collapse;
+     width: 100%;
+}
+
+td, th{
+     padding: 10px 15px;
+     border: 1px solid #ddd;
+     text-align: center;
+}
+td{
+     color: #333;
+     font-weight: 600;
+}
+
+tr:nth-child(even){
+     background-color: #F5F5F5;
+}
+
+.bt-action{
+     border: none;
+     border-radius: 5px;
+     padding: 5px;
+     color: #fff;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+.bt-action:nth-child(1){
+     background-color: orange;
+     margin-right: 5px;
+}
+.bt-action:nth-child(2){
+     background-color: rgba(237, 42, 42, 0.9);
+}
+
+/* Estilos para telas com largura menor que 600px */
+@media (max-width: 600px) {
+     table {
+          width: 10 0%; /* Ou outro valor apropriado */
+        }
+
+
+     body {
+          font-size: 14px;
+        }
+
+     main {
+       width: 90%;
+     }
+   
+     .addform {
+       flex-direction: column;
+       gap: 20px;
+     }
+   
+     input,
+     button[type="submit"] {
+       width: 100%;
+     }
+     
+     .bt-action {
+       margin-top: 10px;
+     }
+   }
+   
